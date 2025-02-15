@@ -237,7 +237,7 @@ left: 45mm;
     letter-spacing: 4px;
     overflow: hidden;
     margin-right: 50px;
-
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);;
 }
 .neonbuttons:hover{
     background: #03e9f4;
