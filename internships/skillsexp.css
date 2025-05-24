@@ -97,3 +97,13 @@ h1{
         display: flex;
     }
 }
+
+.contact-info a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.contact-info i {
+  color: white !important;
+}
+

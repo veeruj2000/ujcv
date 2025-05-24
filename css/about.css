@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  font-family: "Poppins";
-  color: #343434;
+  font-family: "Poppins" !important;
+  color: white;
   margin: 0;
 background-image:linear-gradient(to right,rgb(0, 0, 0), rgb(29, 0, 53));
 text-align: center;
@@ -116,6 +116,7 @@ __________________________*/
     color: #e5c9fb;
   border-bottom: 5px solid #f2b90a;
   font-size: 14px;
+  padding: 0 !important;
 }
 
 .brand-title {
@@ -211,6 +212,36 @@ __________________________*/
   display: inline;
 }
 
+/*Video
+__________________________*/
+.frontvideo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #f2b90a;
+}
+
+
+/*AWARDS
+__________________________*/
+.container h2 {
+  font-size: 1.8em;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.container p.lead {
+  font-size: 1.1em;
+  color: white;
+  line-height: 1.6;
+}
+
+#badges h6 {
+  color: white;
+}
+
 
 
 /*FOOTER
@@ -224,9 +255,6 @@ __________________________*/
   width: 100vw;
   margin: -8px;
 }
-
-
-
 
 .frame{
   display: flex;

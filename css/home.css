@@ -79,6 +79,7 @@ __________________________*/
   background-image:linear-gradient(to right,rgb(0, 0, 0), rgb(29, 0, 53));
     color: #e5c9fb;
   border-bottom: 5px solid #f2b90a;
+  padding: 0 !important;
 }
 
 .brand-title {

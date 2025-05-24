@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: "Poppins";
-  color: #343434;
   margin: 0;
 background-image:linear-gradient(to right,rgb(0, 0, 0), rgb(29, 0, 53));
 text-align: center;
@@ -147,37 +146,321 @@ __________________________*/
   margin-left: auto;
   margin-right: auto;
 }
+/* Updated Responsive Box Layout */
 .box {
   display: flex;
-  padding:50px;
-  margin: 50px;
-  padding-left: 50px;
-  margin-left: 0px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto;
+  padding: 0;
 }
-.boxes{
-  background-color: #242526;
-  margin-top: -50px;
+
+/* Section container spacing */
+.boxes {
+  margin-top: -30px;
 }
-.boxes h3{
+
+/* Headings and paragraph styles */
+.boxes h3,
+.boxes p {
   text-align: center;
-  margin: 20px;
+  margin: 15px;
   color: #FFFFFF;
 }
-.boxes p{
+
+/* Box appearance */
+.borderr {
+  padding: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+              4px 6px 20px rgba(0, 0, 0, 0.19);
+  border: 4px solid white;
+  height: 100%;
+}
+
+/* Remove unnecessary margins on specific boxes */
+#box1,
+#box3 {
+  margin: 0;
+}
+
+
+/* GitHub Button Styles */
+.btn-github {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 100px;
+  font-weight: 800;
+  font-size: 0.825rem;
+  line-height: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: 1px solid white; 
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.btn-github:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fce803;
+  transform: translateY(-4px);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 0 1px rgba(252, 232, 3, 0.08);
+}
+
+.btn-github svg {
+  fill: currentColor;
+}
+
+.btn-github {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #0077b5;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-linkedin:hover {
+  background-color: #005b8f;
+  transform: translateY(-2px);
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.btn-linkedin .tooltip {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0077b5;
+  color: white;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.btn-linkedin:hover .tooltip {
+  opacity: 1;
+}
+
+.btn-facebook {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #0163E0;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #0163E0;
+  transition: color 0.3s 0.1s ease-out;
+  margin: 0 auto;
+}
+
+.btn-facebook svg {
+  fill: #0163E0;
+  height: 24px;
+  width: 24px;
+  transition: fill 0.3s ease;
+}
+
+.btn-facebook span {
+  margin: 0 10px;
+}
+
+.btn-facebook::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.btn-facebook:hover {
+  color: #fff;
+  border: 1px solid #0163E0;
+}
+
+.btn-facebook:hover svg {
+  fill: #fff;
+}
+
+.btn-facebook:hover::before {
+  box-shadow: inset 0 0 0 10em #0163E0;
+}
+
+.btn-instagram-custom {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255, 0, 0);
+  transition: color 0.3s 0.1s ease-out;
   text-align: center;
-  margin: 20px;
-  color: #FFFFFF;
+  margin: 0 auto;
 }
-.borderr{
-  padding: 50px;
-  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.btn-instagram-custom span {
+  margin: 10px;
 }
-#box1{
-  margin-right: 30px;
+
+.btn-instagram-custom::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: '';
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
 }
-#box3{
-  margin-left: 30px;
+
+.btn-instagram-custom:hover {
+  color: #fff;
+  border: 1px solid rgb(255, 0, 0);
 }
+
+.btn-instagram-custom:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(255, 0, 0);
+}
+
+.phone-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.phone-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0077B5;
+  border-radius: 30px;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding: 10px 18px;
+  white-space: nowrap; /* Prevent text from breaking to the next line */
+  font-size: 14px;
+}
+
+.phone-icon {
+  height: 20px;
+  width: 20px;
+  transition: transform 1.5s ease;
+  fill: white;
+}
+
+.phone-btn:hover {
+  background-color: #005a8c; /* Darker shade on hover */
+}
+
+.phone-btn:active {
+  transform: scale(0.97);
+}
+
+.phone-btn:hover .phone-icon {
+  transform: rotate(250deg);
+}
+
+.email-btn-wrapper {
+  text-align: center;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.email-btn {
+  width: auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0077B5;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.email-btn:hover {
+  background-color: #005f93;
+}
+
+.email-icon {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+
 
 
 /*FOOTER
