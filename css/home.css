@@ -219,13 +219,17 @@ left: 45mm;
     padding: 0;
     box-sizing: border-box;
 }
-.buttons{
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    gap: 30px;
+    padding: 20px;
 }
+
 .neonbuttons{
     position: relative;
     display: inline-block;
@@ -329,6 +333,17 @@ left: 45mm;
     }
 }
 
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .neonbuttons {
+        margin-right: 0;
+        margin: 20px 0;
+    }
+}
 
 
 /* Responsive
