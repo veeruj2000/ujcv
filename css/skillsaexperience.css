@@ -1258,9 +1258,9 @@ __________________________*/
 }
 
 .ujlogo{
-  width: 50px;
+  width: 125px;
   padding-left: 15px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
   display: inline;
 }
 
